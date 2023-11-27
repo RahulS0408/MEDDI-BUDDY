@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hospital Registration Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f1f1f1;
+		}
+		h1 {
+			text-align: center;
+			color: #008080;
+		}
+		form {
+			background-color: #ffffff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px #008080;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			color: #008080;
+		}
+		input[type="text"], input[type="email"], select {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 15px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #008080;
+			color: #ffffff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #005959;
+		}
+    
+    nav {
+        background-color: #eeeeee;
+        padding: 10px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    nav li {
+        float: left;
+    }
+    
+    nav a {
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+    }
+    
+    nav a:hover {
+        background-color: #336699;
+    }
+
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="rahulhome.html">Home</a></li>
+			<li><a href="aboutuspage.html">About Us</a></li>
+			<li><a href="service.html">Services</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="index.html">sign up</a></li>
+			<li><a href="login.html">login</a></li>
+
+		</ul>
+	</nav>
+	<h1>Hospital Registration Form</h1>
+	<form action="formsub.html">
+		<label>
+		Salutation
+		<br/>
+		<select name="salutation">
+		<option>--None--</option>
+		<option>Mr.</option>
+		<option>Ms.</option>
+		<option>Mrs.</option>
+		<option>Dr.</option>
+		<option>Prof.</option>
+		</select></label>
+		<label for="name">Patient Full Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		 <label for="gender">Gender:</label>
+		 <select id="gender" name="gender">
+		<option>--None--</option>
+		 	<option value="male">Male</option>
+		 	<option value="female">Female</option>
+		 	<option value="other">Other</option>
+		 </select>
+		<label for="name">Hospital Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="name">Doctor consulted:</label>
+		<input type="text" id="name" name="name" required>
+
+
+		<label for="phone">Phone Number:</label>
+		<input type="text" id="phone" name="phone" required>
+
+		<label for="address">Address:</label>
+		<input type="text" id="address" name="address" required>
+
+		<label for="dob">Date of Birth:</label>
+		<input type="date" id="dob" name="dob" placeholder="DD/MM/YYYY" required>
+<hr>
+<p><strong>AGREEMENT</strong></p>
+<p><input type="checkbox" id="name" name="name" required> I agree to settle my Hospital accourt in futur the time of my discharge when personally paying my accourt or where do not have "prior approval" from my insurer understand am responsible for any outstanding balance my procedures not furly covered by insurance ACC or other contract.
+
+</p>
+<p> The details above have been completed by</p>
+<p>Signature</p>
+<input type="text" id="name" name="name" required>
+	<center>	<input type="submit" value="Submit"> </center>
+	</form>
+</body>
+</html>
